@@ -42,3 +42,6 @@ class AcronymTest(unittest.TestCase):
 
     def test_underscore_emphasis(self):
         self.assertEqual(abbreviate("The Road _Not_ Taken"), "TRNT")
+
+    def test_final_single_letter_word(self):
+        self.assertEqual(abbreviate("one two a"), "OTA")
